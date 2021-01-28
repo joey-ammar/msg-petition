@@ -1,0 +1,323 @@
+/*********************** General 
+ 		  Styling  ***********************/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+/*********************** Register 
+		   Form  ***********************/
+/*********************** login 
+		   Form  ***********************/
+/*The Sign / sing-image / sign-syntax*/
+/*The same for login also*/
+.sign {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.sign-image {
+	height: 100vh;
+	background-image: url('/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sign-syntax {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.form__edit {
+	margin-top: 20px;
+}
+/*loginButton*/
+.loginButton {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+.loginButton img {
+	width: 25px;
+}
+.loginButton a {
+	font-size: 14px;
+	color: #1e2b3c;
+	font-weight: 700;
+}
+/*inside__sign */
+/*inside__login*/
+/*inside__profile*/
+/*petition*/
+.inside__sign {
+	height: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.inside__login,
+.inside__profile,
+.inside__petition {
+	margin-top: 30px;
+}
+
+.inside__sign h1 {
+	font-weight: 700;
+	font-size: 20px;
+}
+#pet-header {
+	margin-bottom: 10px;
+}
+#pet {
+	background-color: #1e2b3c;
+	color: #fff;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+}
+#des {
+	background-color: #0093d3;
+	color: #fff;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+}
+.inside__sign img {
+	width: 30%;
+}
+/*form__sign*/
+/*Form__login*/
+/*Form__login*/
+.form__sign {
+	height: 70vh;
+}
+.form__login {
+	margin-top: 60px;
+}
+.form__profile {
+	margin-top: 70px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}
+form h2 {
+	font-size: 15px;
+	font-weight: 500;
+}
+input {
+	border: none;
+	border-bottom: 1px solid #1e2b3c;
+	width: 70%;
+	margin: 20px 0px;
+	outline: 0;
+	padding: 10px 0px;
+}
+input:active,
+input:focus {
+	border-bottom: 2px solid #0093d3;
+}
+input::placeholder {
+	font-size: 12px;
+}
+.accepted {
+	color: green;
+}
+.error {
+	color: red;
+}
+#canvasInput {
+	border: 1px solid #1e2b3c;
+	margin: 20px 0px;
+}
+
+#submit {
+	width: 20%;
+	font-size: 15px;
+	background-color: #1e2b3c;
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#following {
+	display: block;
+	font-weight: 700;
+}
+.social-media {
+	margin-top: 30px;
+}
+.social-media img {
+	margin-top: 10px;
+	width: 15px;
+	margin-right: 5px;
+}
+/*********************** Register 
+ 		  Form  ***********************/
+
+/*
+form validation classes
+*/
+
+/*********************** Thanks 
+ 		  page  ***********************/
+.thanks {
+	background-image: radial-gradient(
+		circle,
+		#f1f8ff,
+		#f0f7fe,
+		#eff7fd,
+		#eff6fc,
+		#eef5fb,
+		#edf4fa,
+		#ebf4f9,
+		#eaf3f8,
+		#e8f2f6,
+		#e6f2f4,
+		#e4f1f2,
+		#e3f0ef
+	);
+	height: 100vh;
+	width: 100%;
+}
+.inside_thanks {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.inside_thanks h1 {
+	font-weight: 700;
+	font-size: 50px;
+	animation: thanksHeader 2s ease-in-out;
+	color: #242424;
+}
+.inside_thanks p {
+	margin: 30px 0px;
+	width: 60%;
+	font-weight: 300;
+	line-height: 30px;
+	font-size: 16px;
+}
+.highlight {
+	background-color: #1e2b3c;
+	color: #fff;
+	padding: 10px 20px;
+}
+.numSigner {
+	color: #0093d3;
+}
+.inside_thanks a {
+	font-size: 16px;
+	color: #242424;
+	font-weight: 700;
+}
+.lineThrough {
+	text-decoration: line-through;
+}
+#showSign {
+	margin: 40px 0px;
+}
+.editing {
+	display: inline-block;
+}
+#editProfile {
+	margin-right: 20px;
+}
+/*
+animation
+*/
+@keyframes thanksHeader {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+/* Signer Page */
+.signers {
+	background-image: radial-gradient(
+		circle,
+		#f1f8ff,
+		#f0f7fe,
+		#eff7fd,
+		#eff6fc,
+		#eef5fb,
+		#edf4fa,
+		#ebf4f9,
+		#eaf3f8,
+		#e8f2f6,
+		#e6f2f4,
+		#e4f1f2,
+		#e3f0ef
+	);
+	padding: 39px 0px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.signers h1 {
+	font-size: 45px;
+	color: #242424;
+	animation: thanksHeader 2s ease-in-out;
+	padding: 20px 0px;
+}
+.nameContainer {
+	width: 100%;
+}
+.namesTag {
+	width: 23%;
+}
+#firstTag {
+	font-weight: 700;
+	color: #1e2b3c;
+}
+#lastTag {
+	font-weight: 400;
+	color: #0093d3;
+}
+/* city*/
+.city {
+	width: 100%;
+	height: 100%;
+}
+.inside__city {
+	height: 100%;
+}
+.inside__city h1 {
+	font-size: 30px;
+	padding: 20px 0px;
+}
+.cityPeople {
+	color: #1e2b3c;
+}
+.cityPeople h1 {
+	color: #0093d3;
+}
+.delSigna {
+	display: flex;
+	flex-direction: row;
+}
+#dSigna {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 20px;
+}

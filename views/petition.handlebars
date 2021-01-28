@@ -1,0 +1,58 @@
+{{!-- The sign section --}}
+<section class="sign">
+    {{!-- Right the image part  --}}
+    <div class="sign-image"></div>
+    {{!-- The syntax part  --}}
+
+    <div class="sign-syntax">
+        <div class="container">
+            {{!-- 
+                       -----------------      -----------------
+                       ***************** form *****************
+                       -----------------      -----------------
+                                                            --}}
+            <div class="inside__sign inside__petition">
+                <h1 id="pet-header">A <span id="pet">petition</span> </h1>
+                <h1>for a new Amazon Music <span id="des">design</span> </h1>
+                <img class="logo" src="/logo.png" alt="The logo of amazon music">
+            </div>
+            {{!-- 
+                       -----------------      -----------------
+                       ***************** form *****************
+                       -----------------      -----------------
+                                                            --}}
+            <div class="form__sign">
+                <form id="main_form" method="POST" action="">
+                    <h2>
+                        Please Sign the petition and get a free t-shirt !
+                    </h2>
+                    {{!-- Invisible input --}}
+
+                    <input class="hidden" type="hidden" name="signature" id="form_hidden">
+                    <span class="error-sign" id="error-sign"></span>
+
+                    <input class="hidden" type="hidden" name="_csrf" value="{{csrfToken}}" id="form_hidden">
+                    <span class="error-sign" id="error-sign"></span>
+
+                    {{!-- Canvas --}}
+                    <canvas id="canvasInput" height="100px" width="200px!important"></canvas>
+                    {{!-- Submit--}}
+                    <button id="submit">Submit</button>
+                    {{!-- 
+                       -----------------      -----------------
+                       ***************** form *****************
+                       -----------------      -----------------
+                                                            --}}
+                    <div class="social-media">
+                        <small id="following">Follow us, we don't bite.</small>
+                        <a href=""><img src="/reddit.svg" alt=""></a>
+                        <a href=""><img src="/twitter.svg" alt=""></a>
+                        <a href=""><img src="/instagram.svg" alt=""></a>
+                        <a href=""><img src="/medium.svg" alt=""></a>
+                        <a href=""><img src="/hash.svg" alt=""></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

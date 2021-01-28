@@ -1,0 +1,55 @@
+{{!-- The sign section --}}
+<section class="sign">
+    {{!-- Right the image part  --}}
+    <div class="sign-image"></div>
+    {{!-- The syntax part  --}}
+    <div class="sign-syntax">
+        <div class="container">
+
+            {{!-- 
+                       -----------------      -----------------
+                       ***************** form *****************
+                       -----------------      -----------------
+                                                            --}}
+            <div class="form__edit">
+                <form id="main_form" method="POST" action="">
+                    {{#results}}
+                    <h2>
+                        Please update your profile <br> and provide more information
+                    </h2>
+                    {{!-- first input --}}
+                    <input required placeholder="First Name" type="text" name="first" id="form_first" value="{{first}}">
+                    <span class="error-first" id="error-first"></span>
+                    {{!-- Second input --}}
+                    <input required placeholder="Last Name" type="text" name="last" id="form_last" value="{{last}}">
+                    <span class="error-last" id="error-last"></span>
+                    {{!-- email input --}}
+                    <input required placeholder="Email" type="email" name="email" id="form_email" value="{{email}}">
+                    <span class="error-email" id="error-email"></span>
+                    {{!-- password input --}}
+                    <input placeholder="Password" type="password" name="pw" id="form_pw">
+                    <span class="error-pw" id="error-pw"></span>
+                    {{!-- age input --}}
+                    <input placeholder="age" type="number" name="age" id="form_email" value="{{age}}">
+                    <span class="error-email" id="error-email"></span>
+                    {{!-- city input --}}
+                    <input placeholder="city" type="text" name="city" id="form_email" value="{{city}}">
+                    <span class="error-email" id="error-email"></span>
+                    {{!-- url input --}}
+                    <input placeholder="Homepage" type="text" name="url" id="form_email" value="{{url}}">
+                    <span class="error-email" id="error-email"></span>
+                    {{/results}}
+                    <input class="hidden" type="hidden" name="_csrf" value="{{csrfToken}}" id="form_hidden">
+                    <span class="error-sign" id="error-sign"></span>
+                    {{!-- Submit--}}
+                    <button id="submit">Submit</button>
+                    {{!-- 
+                       -----------------      -----------------
+                       ***************** socm *****************
+                       -----------------      -----------------
+                                                            --}}
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

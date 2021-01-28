@@ -1,0 +1,74 @@
+{{!-- The sign section --}}
+<section class="sign">
+    {{!-- Right the image part  --}}
+    <div class="sign-image"></div>
+    {{!-- The syntax part  --}}
+    <div class="sign-syntax">
+        <div class="container">
+            <div class="loginButton">
+                <div>
+                    <img src="/user.png" alt="The login Button">
+                </div>
+                <div>
+                    <a href="/login">Login</a>
+                </div>
+            </div>
+            {{!-- 
+                       -----------------      -----------------
+                       ***************** Head *****************
+                       -----------------      -----------------
+                                                            --}}
+            <div class="inside__sign">
+                <h1 id="pet-header">A <span id="pet">petition</span> </h1>
+                <h1>for a new Amazon Music <span id="des">design</span> </h1>
+                <img class="logo" src="/logo.png" alt="The logo of amazon music">
+            </div>
+            {{!-- 
+                       -----------------      -----------------
+                       ***************** form *****************
+                       -----------------      -----------------
+                                                            --}}
+            <div class="form__sign">
+                <form id="main_form" method="POST" action="">
+                    <h2>
+                        Please Sign the petition and get a free t-shirt !
+                    </h2>
+                    {{!-- first input --}}
+                    <input placeholder="First Name" type="text" name="first" id="form_first">
+                    <span class="error-first" id="error-first"></span>
+                    {{!-- last input --}}
+                    <input placeholder="Last Name" type="text" name="last" id="form_last">
+                    <span class="error-last" id="error-last"></span>
+                    {{!-- Invisible input --}}
+                    <input placeholder="Email" type="email" name="email" id="form_email">
+                    <span class="error-email" id="error-email"></span>
+                    {{!-- Invisible input --}}
+                    <input placeholder="Password" type="password" name="pw" id="form_pw">
+                    <span class="error-pw" id="error-pw"></span>
+                    {{!-- Invisible input --}}
+                    <input class="hidden" type="hidden" name="_csrf" value="{{csrfToken}}" id="form_hidden">
+                    <span class="error-sign" id="error-sign"></span>
+                    {{!-- Submit--}}
+                    <button id="submit">Submit</button>
+
+                    {{!-- 
+                       -----------------      -----------------
+                       ***************** SOCM *****************
+                       -----------------      -----------------
+                                                            --}}
+                    <div class="social-media">
+                        <small id="following">Follow us, we don't bite.</small>
+                        <a href=""><img src="/reddit.svg" alt=""></a>
+                        <a href=""><img src="/twitter.svg" alt=""></a>
+                        <a href=""><img src="/instagram.svg" alt=""></a>
+                        <a href=""><img src="/medium.svg" alt=""></a>
+                        <a href=""><img src="/hash.svg" alt=""></a>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {{!-- The end of the section --}}
+</section>

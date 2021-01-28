@@ -1,0 +1,38 @@
+{{!-- 
+                       -----------------      -----------------
+                       ***************** Thanks *****************
+                       -----------------      -----------------
+                                                            --}}
+<section class="thanks">
+    <div class="container">
+        {{!-- 
+                       -----------------              -----------------
+                       ***************** insideThanks *****************
+                       -----------------              -----------------
+                                                            --}}
+        <div class="inside_thanks">
+            <h1> <span class="highlight">Thank</span> You for Submitting</h1>
+            <p>
+                Amazon is a very large company that offers many services, and one of the services we are complaining
+                about is <span class="lineThrough">amazon music</span>.
+                Today the world of streaming is changing and the competition between the music streaming companies is
+                changing too.
+                So in order for <span class="lineThrough">amazon music</span> to survive changes must be done and
+                especially its design.
+            </p>
+
+            <form class="delSigna" method="POST" action="/thanks/delete">
+                <button id="dSigna" style="">Delete</button>
+
+                <div class="editing"><a id="editProfile" href="/profile/edit">Edit your account</a> <a
+                        href="/logout">logout</a>
+                </div>
+                <input class="hidden" type="hidden" name="_csrf" value="{{csrfToken}}" id="form_hidden">
+            </form>
+            <div class="showSign">
+                <img id="showSign" src="{{signature}}" alt="The signature of the submitted person">
+            </div>
+            <a href="/signers">Curios ha! see all <span class="numSigner">{{number}}</span> signers </a>
+        </div>
+    </div>
+</section>
