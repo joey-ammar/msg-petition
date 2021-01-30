@@ -12,7 +12,7 @@ Technologies used :
 **********************/
 
 
-/**********************+
+/**********************
 Project live: http://newamazondesign.herokuapp.com/register
 ***********************/
 
